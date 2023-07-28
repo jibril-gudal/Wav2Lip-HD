@@ -186,7 +186,7 @@ def datagen(mels):
 		yield img_batch, mel_batch, frame_batch, coords_batch
 
 mel_step_size = 16
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = 'cuda'
 print('Using {} for inference.'.format(device))
 
 def _load(checkpoint_path):
